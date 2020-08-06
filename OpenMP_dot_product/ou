@@ -1,0 +1,17 @@
+Rows = 3,Cols = 3,nprocs =10 
+timw = 0.000097
+thread id= 8, start = 8, stop =3 
+thread id= 0, start = 0, stop =1 
+thread id= 3, start = 3, stop =3 
+thread id= 4, start = 4, stop =3 
+thread id= 2, start = 2, stop =3 
+thread id= 1, start = 1, stop =2 
+thread id= 5, start = 5, stop =3 
+thread id= 9, start = 9, stop =3 
+thread id= 6, start = 6, stop =3 
+thread id= 7, start = 7, stop =3 
+time for kernel=0.014498
+oputput 
+
+10.000000 6.000000 16.000000 
+Total Time = 0.010000
