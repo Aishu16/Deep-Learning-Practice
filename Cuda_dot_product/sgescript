@@ -1,0 +1,37 @@
+
+
+#!/bin/sh
+#
+# Usage: gputest.sh
+# Change job name and email address as needed 
+#        
+# -- our name ---
+#$ -N chi2
+#$ -S /bin/sh
+# Make sure that the .e and .o file arrive in the
+#working directory
+#$ -cwd
+#Merge the standard out and standard error to one file
+#$ -j y
+# Send mail at submission and completion of script
+#$ -m be
+# Request a gpu
+
+#$ -q datasci
+
+/bin/echo Running on host: `hostname`.
+/bin/echo In directory: `pwd`
+/bin/echo Starting on: `date`
+ 
+# Load CUDA module
+. /opt/modules/init/bash
+module load cuda
+
+#module load gsl-gnu4
+#export LD_LIBRARY_PATH=/opt/gsl/1.15/gnu4/lib:$LD_LIBRARY_PATH
+
+#Full path to executable
+
+#/usr/bin/time -f %e -o chi2time_ /home/a/anw24/Homework1/Homework  /home/a/anw24/Homework1/d.txt   /home/a/anw24/Homework1/v.txt 3 3 0 256 > ou
+
+/usr/bin/time -f %e -o chi2time_ /afs/cad/courses/ccs/s19/cs/677/002/anw24/Homework1/Homework  /afs/cad/courses/ccs/s19/cs/677/002/anw24/Homework1/d.txt   /afs/cad/courses/ccs/s19/cs/677/002/anw24/Homework1/v.txt 3 3 0 256 > ou

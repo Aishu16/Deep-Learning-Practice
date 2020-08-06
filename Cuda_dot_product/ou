@@ -1,0 +1,12 @@
+Rows= 3,Cols = 3,CUDA_DEVICE= 0, THREADS =256 
+time to read data = 0.000549
+time to copy  data to GPU=0.000022
+time to copy v data to GPU=0.000005
+time for kernel=0.000033
+test output
+
+10.000000 
+6.000000 
+16.000000 
+
+time = 0.220000
